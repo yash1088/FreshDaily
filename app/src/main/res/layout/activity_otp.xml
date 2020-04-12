@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CyanP"
+    android:orientation="vertical"
+    tools:context=".Otp">
+
+
+
+    <com.smarteist.autoimageslider.SliderLayout
+        android:id="@+id/imageSlider1"
+        android:layout_width="match_parent"
+        android:background="@color/CyanP"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="@dimen/_6sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textAlignment="center"
+                    android:text="Enter OTP"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_15ssp"
+                    />
+
+                <EditText
+                    android:id="@+id/otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:backgroundTint="@color/CyanP"
+                    android:layout_marginHorizontal="@dimen/_100sdp"
+                    android:maxLength="4"
+                    android:fontFamily="@font/noto_sans"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:textSize="@dimen/_12ssp"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/otp"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/Gray" />
+
+                <Button
+                    android:id="@+id/Continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:layout_below="@+id/otp"
+                    android:layout_marginHorizontal="@dimen/_70sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/WhiteSmoke"
+                    android:text="@string/sequre"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </com.smarteist.autoimageslider.SliderLayout>
+
+
+
+
+
+
+</LinearLayout>

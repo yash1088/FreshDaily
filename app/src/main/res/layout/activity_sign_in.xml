@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CyanP"
+    android:orientation="vertical"
+    tools:context=".SignIn">
+
+
+    <com.smarteist.autoimageslider.SliderLayout
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:background="@color/CyanP"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="@dimen/_6sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:text="Enter Number"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <EditText
+                    android:id="@+id/mobieno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginHorizontal="@dimen/_65sdp"
+                    android:backgroundTint="@color/CyanP"
+                    android:ems="10"
+                    android:maxLength="10"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:fontFamily="@font/noto_sans"
+                    android:textSize="@dimen/_12ssp"
+                    android:hint="@string/login"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/Gray" />
+
+
+                <LinearLayout
+                    android:id="@+id/terms"
+                    android:layout_below="@+id/mobieno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:id="@+id/check"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/CyanP">
+
+                    </CheckBox>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/CyanP"
+                        android:textSize="@dimen/_10ssp"
+                        android:fontFamily="@font/noto_sans"
+                        android:text="@string/taping">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/noto_sans"
+                        android:padding="@dimen/_5ssp"
+                        android:text="@string/ternandcondition"
+                        android:textAlignment="center"
+                        android:textColor="@color/CyanP"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/LOgin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@+id/terms"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_70sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:gravity="center"
+                    android:text="@string/button"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </com.smarteist.autoimageslider.SliderLayout>
+
+
+
+
+
+
+</LinearLayout>
